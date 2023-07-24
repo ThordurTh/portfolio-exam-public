@@ -1,0 +1,356 @@
+@import url("https://use.typekit.net/pbk1ozk.css");
+@import url("https://use.typekit.net/pbk1ozk.css");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/*Header*/
+
+body {
+  background-color: #467478;
+}
+
+header {
+ position: absolute;
+ top: 10px;
+ right:10%;
+ padding: 3em 0;
+ z-index: 1;
+}
+
+.main_nav {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.dropdown, .about, .logo {
+  margin-left: 1em;
+}
+
+.dropdown {
+  position: relative;
+}
+
+button {
+  /* padding: 0.5em 2.2em;
+  background-image: linear-gradient(#4B7C80, #3F686C);
+  border-radius: 7px;
+  color: #D6D6D6;
+  font-size: 1.1em;
+  box-shadow: -1px -11px 22px #3C6366;
+  border: none;
+  font-family: bely, serif;
+  font-weight: 400;
+  font-style: normal; */
+}
+
+/* button:hover {
+  cursor: pointer;
+} */
+
+.dropdown_content {
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background-color: #8BA6A8;
+  z-index: 1;
+  left: 0;
+  font-size: 0.9em;
+}
+
+.dropdown_content a {
+  color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block; 
+}
+
+.logo img{
+  width: 81px;
+}
+
+
+/*Body*/
+
+body {
+  background-color: #467478;
+}
+
+h1 {
+  font-size: 86px;
+  color: #2B2B2B;
+  font-family: bely, serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+h2 {
+  font-size: 48px;
+  color: #2B2B2B;
+  margin: 1em 0 0.7em;
+  font-family: bely, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.4em;
+  padding-bottom: 1em;
+  color: #2B2B2B;
+  font-family: albertan-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1em 0;
+  
+
+}
+
+
+
+a {
+  color: #D6D6D6;
+  text-decoration: none;
+  font-family: bely, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.about, .dropdown {
+  padding: 0.5em 2.2em;
+  background-image: linear-gradient(#4B7C80, #3F686C);
+  border-radius: 7px;
+  color: #D6D6D6;
+  font-size: 1.1em;
+  box-shadow: -1px -11px 22px #3C6366;
+  border: none;
+  font-family: bely, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.about:hover {
+  cursor: pointer;
+}
+
+.dropdown:hover {
+  cursor: pointer;
+}
+
+
+br {
+    margin-bottom: 1em;
+}
+
+/* Main */
+
+main {
+    
+}
+
+#index_about {
+    background-color: #8BA6A8;
+    width: 100%;
+    padding: 2em 0;
+}
+
+#index_about div {
+    border-top: 1px solid #2B2B2B;
+    border-bottom: 1px solid #2B2B2B;
+    width: 50%;
+  margin: 0 auto;
+    
+}
+
+
+
+#front {
+    width: 100%;
+    position: relative;
+    height: 75vh;
+    
+}
+
+#front div {
+    margin-top: 20vh;
+    width: 100%;
+}
+
+.front_line {
+    width: 180px;
+    margin-left: 10px;
+    display: block;
+    position: relative;
+
+
+    animation-name: front_line;
+    animation-duration: 4s;
+    opacity: 1;
+}
+
+.th {
+    /* width: 50%; */
+    width: 1000px;
+    margin-left: -110px;
+    position: relative;
+
+    animation-name: th;
+    animation-duration: 4s;
+    opacity: 1;
+}
+
+.frimann {
+    /* width: 25%; */
+    width: 530px;
+    margin-left: -8vw;
+    position: relative;
+
+    animation-name: frimann;
+    animation-duration: 3s;
+    opacity: 1;
+}
+
+footer {
+    height: 5em;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 30vw;
+    color: #2B2B2B;
+    background-color: #8BA6A8;
+  }
+
+
+@media screen and (max-width: 1340px) {
+
+    #front {
+        height: 65vh;
+    }
+
+    #front div {
+        margin-top: 30vh;
+    }
+
+    .front_line {
+        width: 15%;
+
+    }
+    
+    .th {
+        width: 70%;
+        margin-left: -10%;
+    }
+    
+    .frimann {
+        width: 40%;
+        
+        
+    } 
+}
+
+@media screen and (max-width: 570px) {
+    #index_about div {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    header {
+      top: 0;
+      padding: 0;
+    }
+  
+    .main_nav {
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 80vw;
+      padding-top: 5vh;
+      height: 20vh;
+    }
+
+    .dropdown, .about {
+      width: 100px;
+      text-align: center;
+  }
+    
+  .dropdown_content {
+    width:100%;
+  }
+
+    .logo {
+        order: -1;
+    }
+
+    #front {
+        height: 58vh;
+    }
+
+    #front div {
+        margin-top: 38vh;
+    }
+}
+
+
+
+@keyframes front_line {
+    from {
+        left: -200px;
+        opacity: 0;
+    }
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes th {
+    0% {
+        
+        left: -1000px;
+        opacity: 0;
+    }
+    100% {
+        
+        left: 0;
+        opacity: 1;
+
+    }
+}
+
+@keyframes frimann {
+    from {
+        
+        bottom: -200px;
+        opacity: 0;
+    }
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+
+.arrow {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 2em;    
+}
+
+
+

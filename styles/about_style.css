@@ -1,0 +1,314 @@
+@import url("https://use.typekit.net/pbk1ozk.css");
+@import url("https://use.typekit.net/pbk1ozk.css");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/*Header*/
+
+body {
+  background-color: #467478;
+}
+
+header {
+ position: absolute;
+ top: 10px;
+ right:10%;
+ padding: 3em 0;
+ z-index: 1;
+}
+
+.main_nav {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.dropdown, .about, .logo {
+  margin-left: 1em;
+}
+
+.dropdown {
+  position: relative;
+}
+
+button {
+  padding: 0.5em 2.2em;
+  background-image: linear-gradient(#4B7C80, #3F686C);
+  border-radius: 7px;
+  color: #D6D6D6;
+  font-size: 1.1em;
+  box-shadow: -1px -11px 22px #3C6366;
+  border: none;
+  font-family: bely, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.dropdown_content {
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background-color: #8BA6A8;
+  z-index: 1;
+  left: 0;
+  font-size: 0.9em;
+}
+
+.dropdown_content a {
+  color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block; 
+}
+
+.logo img{
+  width: 81px;
+}
+
+
+/*Body*/
+
+body {
+  background-color: #467478;
+}
+
+h1 {
+  font-size: 86px;
+  color: #2B2B2B;
+  font-family: bely, serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+h2 {
+  font-size: 48px;
+  color: #2B2B2B;
+  margin: 1em 0 0.7em;
+  font-family: bely, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3 {
+    font-size: 36px;
+    color: #2B2B2B;
+    margin: 1em 0 0.7em;
+    font-family: bely, serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+p {
+  font-size: 18px;
+  line-height: 1.4em;
+  padding-bottom: 1em;
+  color: #2B2B2B;
+  font-family: albertan-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1em 0;
+
+}
+
+a {
+  color: #D6D6D6;
+  text-decoration: none;
+  font-family: bely, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.about, .dropdown {
+  padding: 0.5em 2.2em;
+  background-image: linear-gradient(#4B7C80, #3F686C);
+  border-radius: 7px;
+  color: #D6D6D6;
+  font-size: 1.1em;
+  box-shadow: -1px -11px 22px #3C6366;
+  border: none;
+  font-family: bely, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.about:hover {
+  cursor: pointer;
+}
+
+.dropdown:hover {
+  cursor: pointer;
+}
+
+li {
+  font-size: 18px;
+  color: #2B2B2B;
+  font-family: albertan-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  list-style: none;
+  line-height: 1.4em;
+}
+
+ul {
+  padding-bottom: 1em;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+/* Main */
+
+main {
+    background-color: #8BA6A8;
+    width: 100%;
+}
+
+#about_me {
+    display: grid;
+    grid-template-columns: 3fr 2fr ;
+    padding: 0 20%;
+    margin-top: 20vh;
+
+}
+
+#about_me h1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    border-bottom: 2px solid #2B2B2B;
+} 
+
+.about_text {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding-top: 2em;
+}
+
+.about_img {
+  grid-column: 2 / 3;
+    grid-row: 2 / 4;
+    border-bottom: 2px solid #2B2B2B;
+    padding-bottom: 1em;
+}
+
+.about_img img {
+    width: 70%;
+    padding: 3em 0 1em 2em;
+    display: block;
+    margin: 0 auto;
+}
+
+.cv {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #2B2B2B;
+}
+
+.education {
+   display: inline-block;
+   padding-right: 2em;
+}
+
+.courses {
+  display: inline-block;
+  
+}
+
+
+
+
+
+
+
+
+
+footer {
+    height: 5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 30vw;
+    color: #2B2B2B;
+    background-color: #8BA6A8;
+  }
+
+
+
+
+
+
+@media screen and (max-width: 875px) {
+
+    #about_me {
+      display: block;
+    }
+
+    .about_img img {
+      padding-left: 0;
+  }
+
+}
+
+
+
+@media screen and (max-width: 420px) {
+
+    header {
+      top: 0;
+      padding: 0;
+    }
+  
+    .main_nav {
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 80vw;
+      padding-top: 5vh;
+      height: 20vh;
+    }
+
+    .dropdown, .about {
+        width: 100px;
+        text-align: center;
+    }
+    
+    .dropdown_content {
+      width:100%;
+    }
+
+    .logo {
+        order: -1;
+    }
+
+    #about_me {
+      margin-top: 30vh;
+      padding: 0 10%;
+    }
+
+    
+
+}
+
+
+
+
+
+

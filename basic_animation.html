@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/ani_style.css">
+    <title>Basic Animation</title>
+</head>
+
+<body>
+
+
+
+    <header>
+        <nav class="main_nav">
+
+            <div onclick="dropDown()" class="dropdown dropdown_button">Portfolio
+                <div id="myDropdown" class="dropdown_content">
+                    <a href="basic_content.html">Basic Web</a>
+                    <a href="basic_ux.html">Basic UX</a>
+                    <a href="#">Basic Animation</a>
+                    <a href="basic_content.html">Basic Content</a>
+                </div>
+            </div>
+
+            <div class="about">
+                <a href="about.html">About</a>
+            </div>
+
+            <div class="logo">
+                <a href="index.html"><img src="images/th.png" alt=""></a>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div class="main_grid">
+
+        <div>
+            <nav class="sidenav">
+                <a href="basic_web.html">Basic Web</a>
+                <a href="basic_ux.html">Basic UX</a>
+                <a href="#">Basic Animation</a>
+                <div class="sections">
+                    <a href="#paper"><img src="images/line.png" alt="">Paper Prototype</a>
+                    <a href="#diagram"><img src="images/line.png" alt="">Activity Diagram</a>
+                    <a href="#assets"><img src="images/line.png" alt="">Asset List & Design Documentation</a>
+                </div>
+                <a href="basic_content.html">Basic Content</a>
+            </nav>
+        </div>
+
+
+
+
+        <main>
+            <section id="basic_ani">
+                <h1>Basic Animation</h1>
+                <div class="program_icons">
+                    <figure>
+                        <img src="images/js.png" alt="Javascript">
+                        <figcaption>Javascript</figcaption>
+                    </figure>
+                </div>
+                <div class="basic_text">
+                    <p>This 4 week long theme was about learning the basics of the programming language Javascript. With
+                        the addition of HTML and CSS, is it the third language that makes up most websites. </p>
+                    <p>The goal was to make a functioning point-and-click game with our own assets on a website. It
+                        required a background, score, health, a timer and a “good thing” and a “bad thing” to click on.
+                        The click-able things had to have an animation and a consequence; a point for clicking the good
+                        and losing health by clicking the bad.
+                    </p>
+                    <p>Since the game was supposed to be displayed on a website did we have to use all our prior
+                        knowledge to make it happen. The website’s structure with HTML, styling and animating with CSS,
+                        functions with Javascript, assets made in Adobe Illustrator and even a paper-prototype of the
+                        game like in basic UX. </p>
+                    <a href="https://thordurth.github.io/basic-animation-public" target="_blank">Link to game</a>
+                </div>
+            </section>
+            <!--basic ani ENDS-->
+
+            <section id="paper">
+                <h2>Paper Prototype</h2>
+                <div class="paper_text">
+                    <p>Before any code was written, we brainstormed on an idea. When we had an idea for a game that
+                        met the requirements, we tested the idea on paper. Before writing any code, I made a
+                        paper-prototype to visualise the game.
+                    </p>
+                    <img src="images/paper_proto_game.png" alt="image of paper prototype" />
+                </div>
+
+
+            </section>
+            <!--russian ENDS-->
+
+            <section id="diagram">
+                <h2>Activity Diagram</h2>
+                <div class="diagram_text">
+                    <p>Before we could begin to understand the Javascript code necessary for the game to function, we
+                        made an activity diagram. It would serve as a blueprint for us to follow since programming in
+                        javascript can turn complicated very fast.
+                    </p>
+                    <p>It has a start point which is the moment we hit “PLAY” and an end point which is either a screen
+                        saying “You Lost” or “You Win”. In between are all the user’s inputs and what happens. Clicking
+                        a good thing results in a point given to the player, and you win if the score has reached 10
+                        points, if you’re still not there, then keep going. </p>
+                </div>
+                <img src="images/activity_diagram.png" alt="Activity diagram">
+            </section>
+            <!--micro ENDS-->
+
+            <section id="assets">
+                <h2>Asset List &
+                    Design Documentation</h2>
+                <div class="assets_text">
+                    <p>I decided to make a game about Earth being hit by a series of meteoroids while getting aid from
+                        aliens. The player needs to click in meteoroids in time before they hit Earth to score points or
+                        they’ll lose a heart. Same goes for aliens but the other way around. I got the idea from the
+                        1979 arcade game “Asteroids”, where the player navigates a spaceship and shoots asteroids.
+                    </p>
+                    <p>The game includes a dark background with stars and Earth in the middle. The meteoroids have an
+                        angry face made out of other meteoroid’s collisions and the aliens are creatures living in a
+                        liquid substance flying in spaceships to Earth providing aid.</p>
+                </div>
+                <a href="https://thordurth.github.io/basic-animation-public/assets" target="_blank">Link to assets</a>
+                <img src="images/alien.svg" alt="">
+
+            </section>
+            <!--interest ENDS-->
+        </main>
+    </div>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/thordur-thorhallsson-77b96225/" target="_blank"><img
+                src="images/linked_in.png" alt="LinkedIn"></a>
+        <a href="https://www.instagram.com/thordur_frimann/" target="_blank"><img src="images/instagram.png"
+                alt="Instagram"></a>
+        <a href="https://github.com/ThordurTh" target="_blank"><img src="images/github.png" alt="Github"></a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
